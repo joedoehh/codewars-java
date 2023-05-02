@@ -1,6 +1,6 @@
 package com.joedoe.cwjava;
 
-class StringEndsWithKata {
+public class StringEndsWithKata {
 
     /**
      * String ends with?

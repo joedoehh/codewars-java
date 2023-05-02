@@ -5,7 +5,7 @@ package com.joedoe.cwjava;
  * 7 kyu
  * https://www.codewars.com/kata/6066ae080168ff0032c4107a/train/java
  */
-class MaxSumTwoNegativesKata {
+public class MaxSumTwoNegativesKata {
 
     public static int maxSum(int[] arr) {
         int maxSum = -1;

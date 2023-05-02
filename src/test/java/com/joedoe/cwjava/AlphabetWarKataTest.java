@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class AlphabetWarKataTest {  
+    
     @Test
     public void BasicTest() {
        assertEquals("Right side wins!", AlphabetWarKata.alphabetWar("z"));

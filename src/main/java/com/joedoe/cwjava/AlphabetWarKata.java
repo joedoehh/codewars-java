@@ -10,7 +10,7 @@ import java.util.Set;
  * 7 kyu
  * https://www.codewars.com/kata/59377c53e66267c8f6000027/train/java
  */
-class AlphabetWarKata {
+public class AlphabetWarKata {
 
     private static Map<String, Integer> LETTER_POWER_MAP;
     private static Set<String> LETTER_TEAM_LEFT_SET;
