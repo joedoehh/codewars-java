@@ -9,15 +9,16 @@ public class BinaryTreeWithIncorrectValueTest {
   @Test
   public void testTreeWith3Levels() {
     
-      final int[][] expected = {{0,27}, {1,13}, {2,14}, {6,7}};
+      final int[][] expected = {{0,27}, {1,13}, {2,14}, {6,7}, {2,3}};
     
-      final int[][] input = new int[4][];
+      final int[][] input = new int[5][];
       input[0] = new int[] {28, 13, 14, 6, 7, 5, 9};
       input[1] = new int[] {27, 14, 14, 6, 7, 5, 9};
       input[2] = new int[] {27, 13, 15, 6, 7, 5, 9};
       input[3] = new int[] {29, 13, 16, 5, 8, 9, 1};
+      input[4] = new int[] {5, 2, 2, 1, 1, 2, 1};
     
-      final int[][] actual = new int[4][];
+      final int[][] actual = new int[5][];
       for (int test = 0; test < input.length; test++) {
         actual[test] = BinaryTreeWithIncorrectValue.findIncorrectNumber(input[test]);
         assertArrayEquals("not as expected for 3 level test " + test, expected[test], actual[test]);
