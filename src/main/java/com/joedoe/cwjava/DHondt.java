@@ -3,9 +3,6 @@ package com.joedoe.cwjava;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * test
- */
 public class DHondt {
 
     public record TieBreak(int index, int divisor, int leftMost) {}
