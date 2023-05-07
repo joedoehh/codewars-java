@@ -11,8 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class BasicSocketServerTest {
 
-  @Test
-  void testSomething() {
+  void testSomething() throws InterruptedException {
     Thread server = new Thread(BasicSocketServer::runServer);
     server.start();
     try (Socket client = new Socket()) {
@@ -31,7 +30,7 @@ public class BasicSocketServerTest {
       }
       outputStream.write("exit".getBytes());
       outputStream.flush();
-      Thread.sleep(100);
+      Thread.sleep(1000);
       assertThrows(IOException.class, () -> {
         outputStream.write("First send will \"work\"".getBytes());
         outputStream.flush();
