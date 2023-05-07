@@ -3,7 +3,8 @@ package com.joedoe.cwjava;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SolutionTest {
+public class RobotPathTest {
+
   @Test
   void testSomething() {
     assertEquals("Take 1 step up", RobotPath.walk("^"));
@@ -12,4 +13,5 @@ class SolutionTest {
     assertEquals("Take 2 steps left\nTake 1 step right", RobotPath.walk("<<>"));
     assertEquals("Paused", RobotPath.walk(""));
   }
+
 }
