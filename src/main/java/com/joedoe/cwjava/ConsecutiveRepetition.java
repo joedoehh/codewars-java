@@ -25,10 +25,10 @@ public class ConsecutiveRepetition {
                 currentChar = s.charAt(i);
                 currentLength = 1;
             } 
-        if (currentLength > maxLength) {
-            maxLength = currentLength;
-            maxChar = currentChar;
-        }               
+              if (currentLength > maxLength) {
+                    maxLength = currentLength;
+                    maxChar = currentChar;
+                }               
         return new Object[]{""+maxChar, maxLength}; 
     }
 
