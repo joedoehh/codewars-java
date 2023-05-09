@@ -18,6 +18,7 @@ public class BudTest {
         testing(48, 100, "(48 75)");
         testing(381, 4318, "(1050 1925)");
         testing(2382, 3679, "Nothing");
+        testing(2177, 4357, "Nothing");
         testing(1071625, 1103735, "(1081184 1331967)");
     }
 }

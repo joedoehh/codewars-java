@@ -14,7 +14,7 @@ public class Bud {
         for (long i = start; i <= limit; i++) {
             Set<Long> divisors = properDivisors(i);
             long buddy = sum(divisors)-1;
-            if (isBuddyOf(i, buddy))
+            if ((buddy > i) && isBuddyOf(i, buddy))
                 return String.format("(%d %d)", i, buddy);
         }
         return "Nothing";
