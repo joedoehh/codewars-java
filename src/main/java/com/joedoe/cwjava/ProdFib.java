@@ -14,26 +14,22 @@ public class ProdFib {
         List<Long> fibs = fib(prod);
         long product = 0;
         int n=1;
-        while (product <= prod) {
+        while (product < prod) {
             product = fibs.get(n-1)*fibs.get(n);
             n++; 
         }
         if (product == prod)
-            return new long[] {fibs.get(n-1), fibs.get(n), 1l};
+            return new long[] {fibs.get(n-2), fibs.get(n-1), 1l};
         else
-            return new long[] {fibs.get(n-1), fibs.get(n), 0l};
+            return new long[] {fibs.get(n-2), fibs.get(n-1), 0l};
     }
 
     private static List<Long> fib(long n) {
         List<Long> result = new ArrayList<>();
         result.add(0l);
-        if (n == 1)
-            return result;
         result.add(1l);
-        if (n == 2)
-            return result;
-        for (int i=3; i <= n; i++)   
-            result.add(result.get(i-3)+result.get(i-2)); 
+        for (int i=2; result.get(result.size()-1)  <= n; i++)   
+            result.add(result.get(i-2)+result.get(i-1)); 
         return result;
     }
 
