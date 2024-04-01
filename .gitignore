@@ -29,3 +29,6 @@ replay_pid*
 # vs stuff
 .metals/
 .vscode/
+
+# intellij
+.idea/
