@@ -147,3 +147,10 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij
+/.idea/
+compiler.xml
+compiler.xml
+encodings.xml
+jarRepositories.xml
+misc.xml
+sbt.xml
