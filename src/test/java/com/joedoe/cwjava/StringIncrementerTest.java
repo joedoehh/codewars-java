@@ -28,10 +28,15 @@ public class StringIncrementerTest {
     }
 
     @Test
-    public void randomTest() {
+    public void randomTestLongNumber() {
         doTest("6325656661175895", "6325656661175896");
         doTest("0000000000000000000006325656661175895", "0000000000000000000006325656661175896");
+        doTest("$2ZP#T%P`>S_U^d4vNd~<aQs9u{[pm15531352484583133668592052231083", "$2ZP#T%P`>S_U^d4vNd~<aQs9u{[pm15531352484583133668592052231084");
     }
 
+    @Test
+    public void randomTestRandom() {
+        doTest(":MT84!.Vh\\N#_YQ0&YHwT#]cY=$", ":MT84!.Vh\\N#_YQ0&YHwT#]cY=$1");
+    }
 
 }
